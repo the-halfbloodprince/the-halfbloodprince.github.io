@@ -101,6 +101,7 @@ nav ul {
     color: antiquewhite;
 }
 
+<<<<<<< HEAD
 @keyframes fadeinv1 {
     from {
         opacity: 0;
@@ -111,10 +112,23 @@ nav ul {
     }
     to {
         opacity: 1;
+=======
+@keyframes fadeinv1{
+    from{
+        opacity:0;
+        transform: translateX(-100%);
+    }
+    70%{
+        opacity: 0.4;
+    }
+    to{
+        opacity:1;
+>>>>>>> e13bab6eb388e22e0ca56e7c3edfb6ad676b6abe
         transform: translateX(0);
     }
 }
 
+<<<<<<< HEAD
 @keyframes fadeinv2 {
     from {
         opacity: 0;
@@ -125,6 +139,18 @@ nav ul {
     }
     to {
         opacity: 1;
+=======
+@keyframes fadeinv2{
+    from{
+        opacity:0;
+        transform: translateY(110%);
+    }
+    70%{
+        opacity: 0.4;
+    }
+    to{
+        opacity:1;
+>>>>>>> e13bab6eb388e22e0ca56e7c3edfb6ad676b6abe
         transform: translateY(0);
     }
 }
@@ -137,7 +163,11 @@ nav ul {
     text-shadow: 4px 4px black;
 }
 
+<<<<<<< HEAD
 .firstsec .head {
+=======
+.firstsec .head{
+>>>>>>> e13bab6eb388e22e0ca56e7c3edfb6ad676b6abe
     opacity: 0;
     animation: fadeinv1 2s ease-in forwards;
 }
@@ -154,7 +184,11 @@ nav ul {
     font-family: Mali;
 }
 
+<<<<<<< HEAD
 .firstsec .content {
+=======
+.firstsec .content{
+>>>>>>> e13bab6eb388e22e0ca56e7c3edfb6ad676b6abe
     opacity: 0;
     animation: fadeinv2 1s ease 2s forwards;
 }
@@ -164,37 +198,61 @@ nav ul {
     color: black;
 }
 
+<<<<<<< HEAD
 .secsec {
+=======
+.secsec{
+>>>>>>> e13bab6eb388e22e0ca56e7c3edfb6ad676b6abe
     background: url(13406.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 .thsec {
+=======
+.thsec{
+>>>>>>> e13bab6eb388e22e0ca56e7c3edfb6ad676b6abe
     background: url(qIsOxn.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 .frsec {
+=======
+.frsec{
+>>>>>>> e13bab6eb388e22e0ca56e7c3edfb6ad676b6abe
     background: url(matt-antonioli-tvr95xKC1N4-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 .ftsec {
+=======
+.ftsec{
+>>>>>>> e13bab6eb388e22e0ca56e7c3edfb6ad676b6abe
     background: url(ross-sokolovski-UAFXj9dRpwo-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 .stsec {
+=======
+.stsec{
+>>>>>>> e13bab6eb388e22e0ca56e7c3edfb6ad676b6abe
     background: url(michael-benz-IgWNxx7paz4-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 .sttsec {
+=======
+.sttsec{
+>>>>>>> e13bab6eb388e22e0ca56e7c3edfb6ad676b6abe
     background: url(steve-harvey-U4wcrDteZ2Y-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
