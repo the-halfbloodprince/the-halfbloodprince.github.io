@@ -39,6 +39,7 @@ a:focus {
     background-color: rgba(0, 0, 0, 0);
     padding: 10px 20px 10px 20px;
     width: 100vw;
+    height: 70px;
     display: flex;
     z-index: 10;
 }
@@ -93,6 +94,8 @@ nav ul {
 
 .sec {
     position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
 }
@@ -147,27 +150,24 @@ nav ul {
     color: antiquewhite;
 }
 
-.firstsec .head {
-    cursor: crosshair;
-    opacity: 0;
-    animation: fadeinv1 2s ease-in forwards;
-    left: 50px;
-}
-
 .head::selection {
     background-color: aquamarine;
     color: black;
 }
 
 .content {
-    font-size: 2em;
+    position: relative;
+    font-size: 1.8em;
+    color: antiquewhite;
     padding-left: 50px;
     padding-right: 50px;
     font-family: Mali;
+    top: 4.5em;
 }
 
 .firstsec .content {
     opacity: 0;
+    top: 0;
     animation: fadeinv2 1s ease 2s forwards;
 }
 
@@ -177,45 +177,79 @@ nav ul {
 }
 
 .secsec {
-    background: url(13406.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(13406.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
-.secsec .head {
+.sec .head {
     position: relative;
     display: flex;
-    justify-content: center;
-    top: 20px;
-    left: 50%;
+    flex-direction: column;
+    top: 90px;
+    text-align: center;
+}
+
+.sec .head::after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 6px;
+    width: 30%;
+    align-self: center;
+    background-color: antiquewhite;
+}
+
+.firstsec .head {
+    cursor: crosshair;
+    opacity: 0;
+    animation: fadeinv1 2s ease-in forwards;
+    left: 50px;
+    top: 0em;
+    text-align: left;
+}
+
+.firstsec .head::after {
+    background-color: transparent;
 }
 
 .thsec {
-    background: url(qIsOxn.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(qIsOxn.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
 .frsec {
-    background: url(matt-antonioli-tvr95xKC1N4-unsplash.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(matt-antonioli-tvr95xKC1N4-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
 .ftsec {
-    background: url(ross-sokolovski-UAFXj9dRpwo-unsplash.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(ross-sokolovski-UAFXj9dRpwo-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
+.content ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content ul li {
+    margin: 0 5px 0 5px;
+}
+
 .stsec {
-    background: url(michael-benz-IgWNxx7paz4-unsplash.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(michael-benz-IgWNxx7paz4-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
 .sttsec {
-    background: url(steve-harvey-U4wcrDteZ2Y-unsplash.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(steve-harvey-U4wcrDteZ2Y-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
