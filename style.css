@@ -243,6 +243,11 @@ nav ul {
     margin: 0 5px 0 5px;
 }
 
+.content ul li::selection {
+    background-color: aquamarine;
+    color: antiquewhite;
+}
+
 .stsec {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(michael-benz-IgWNxx7paz4-unsplash.jpg);
     background-size: cover;
@@ -261,7 +266,7 @@ ul#contactlist {
     transform-origin: center;
     margin: 0 15% 0 15%;
     width: 70%;
-    bottom: -10rem;
+    bottom: 0rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -293,4 +298,27 @@ ul#contactlist li:hover {
 
 ul#contactlist li i {
     color: antiquewhite;
+}
+
+#cont {
+    display: flex;
+    justify-content: center;
+}
+
+#cont .head {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#cont .content p {
+    text-align: center;
+    transform: translateY(-6rem);
+    font-size: 2rem;
+}
+
+#cont .content ul {
+    transform: translateY(-6rem);
 }
