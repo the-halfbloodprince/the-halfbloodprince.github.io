@@ -1,3 +1,5 @@
+/* --------*----------  */
+
 * {
     border-style: none;
     border: 0px;
@@ -19,6 +21,9 @@ body {
     width: 100%;
 }
 
+
+/* -----------a--------------- */
+
 a:link {
     color: aliceblue;
     text-decoration: none;
@@ -38,6 +43,9 @@ a:focus {
     border-style: none;
     border: 0px;
 }
+
+
+/* --------------topbar---------------------------- */
 
 #topbar {
     position: fixed;
@@ -71,10 +79,10 @@ nav ul {
 .navi {
     list-style-type: none;
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.6em;
     letter-spacing: 0px;
     padding: 0px 17px 0px 17px;
-    font-family: "Allan", cursive;
+    font-family: "Advent Pro", "Allan", cursive;
     font-weight: 500;
 }
 
@@ -84,9 +92,9 @@ nav ul {
 
 .navi::after {
     content: ' ';
-    height: 4px;
+    height: 2px;
     border-radius: 4px;
-    width: 100%;
+    width: 95%;
     position: relative;
     display: block;
     color: antiquewhite;
@@ -98,8 +106,11 @@ nav ul {
 }
 
 .navi:hover::after {
-    transform: scale(1.05);
+    transform: scale(1);
 }
+
+
+/* ---------------------sections--------------------------- */
 
 .sec {
     position: relative;
@@ -112,41 +123,57 @@ nav ul {
 .firstsec {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(noah-silliman-gzhyKEo_cbU-unsplash.jpg) no-repeat;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(noah-silliman-gzhyKEo_cbU-unsplash.jpg) no-repeat;
     background-position: 0 30%;
     background-attachment: fixed;
     background-size: cover;
     color: antiquewhite;
 }
 
-@keyframes fadeinv1 {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    70% {
-        opacity: 0.4;
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.secsec {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(13406.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-@keyframes fadeinv2 {
-    from {
-        opacity: 0;
-        transform: translateY(110%);
-    }
-    70% {
-        opacity: 0.4;
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.thsec {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(qIsOxn.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+.frsec {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(matt-antonioli-tvr95xKC1N4-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.ftsec {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(ross-sokolovski-UAFXj9dRpwo-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.stsec {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(michael-benz-IgWNxx7paz4-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sttsec {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(steve-harvey-U4wcrDteZ2Y-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#cont {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ---------------head-----------------------  */
 
 .head {
     font-size: 4rem;
@@ -154,7 +181,7 @@ nav ul {
     padding-right: 50px; */
     position: relative;
     top: 60px;
-    font-family: 'Love Ya Like A Sister', cursive;
+    font-family: "Jua", 'Love Ya Like A Sister', cursive;
     text-shadow: 4px 4px black;
     color: antiquewhite;
 }
@@ -162,33 +189,6 @@ nav ul {
 .head::selection {
     background-color: aquamarine;
     color: black;
-}
-
-.content {
-    position: relative;
-    font-size: 1.8em;
-    color: antiquewhite;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-family: Mali;
-    top: 4.5em;
-}
-
-.firstsec .content {
-    opacity: 0;
-    top: 0;
-    animation: fadeinv2 1s ease 2s forwards;
-}
-
-.content::selection {
-    background-color: aquamarine;
-    color: black;
-}
-
-.secsec {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(13406.jpg);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .sec .head {
@@ -222,22 +222,29 @@ nav ul {
     background-color: transparent;
 }
 
-.thsec {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(qIsOxn.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+
+/* -----------------content---------------- */
+
+.content {
+    position: relative;
+    font-size: 2.2em;
+    color: antiquewhite;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Advent Pro";
+    top: 4.5em;
 }
 
-.frsec {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(matt-antonioli-tvr95xKC1N4-unsplash.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+.firstsec .content {
+    opacity: 0;
+    top: 0;
+    animation: fadeinv2 1s ease 2s forwards;
+    margin-bottom: 5em;
 }
 
-.ftsec {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(ross-sokolovski-UAFXj9dRpwo-unsplash.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+.content::selection {
+    background-color: aquamarine;
+    color: black;
 }
 
 .content ul {
@@ -254,18 +261,6 @@ nav ul {
 .content ul li::selection {
     background-color: aquamarine;
     color: black;
-}
-
-.stsec {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(michael-benz-IgWNxx7paz4-unsplash.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.sttsec {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(steve-harvey-U4wcrDteZ2Y-unsplash.jpg);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 ul#contactlist {
@@ -294,23 +289,13 @@ ul#contactlist li:hover {
     animation: showborder .2s 0.1s ease forwards;
 }
 
-@keyframes showborder {
-    from {
-        border-color: transparent;
-    }
-    to {
-        border-color: antiquewhite;
-        background-color: black;
-    }
-}
-
 ul#contactlist li i {
     color: antiquewhite;
+    transition: 0.5s ease;
 }
 
-#cont {
-    display: flex;
-    justify-content: center;
+ul#contactlist li i:hover {
+    color: black;
 }
 
 #cont .head {
@@ -330,4 +315,45 @@ ul#contactlist li i {
 
 #cont .content ul {
     transform: translateY(-6rem);
+}
+
+
+/* ----------------------keyframes-------------------------- */
+
+@keyframes fadeinv1 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    70% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeinv2 {
+    from {
+        opacity: 0;
+        transform: translateY(110%);
+    }
+    70% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes showborder {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: black;
+        background-color: aquamarine;
+    }
 }
