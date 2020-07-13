@@ -5,11 +5,6 @@
     border: 0px;
 }
 
-*::selection {
-    color: black;
-    background-color: aquamarine;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -222,12 +217,19 @@ nav ul {
     background-color: transparent;
 }
 
+#cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 
 /* -----------------content---------------- */
 
 .content {
     position: relative;
     font-size: 2.2em;
+    font-weight: 500;
     color: antiquewhite;
     padding-left: 50px;
     padding-right: 50px;
@@ -310,7 +312,7 @@ ul#contactlist li i:hover {
     text-align: center;
     width: 100%;
     transform: translateY(-6rem);
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 #cont .content ul {
@@ -354,6 +356,20 @@ ul#contactlist li i:hover {
     }
     to {
         border-color: black;
-        background-color: aquamarine;
+        background-color: red;
     }
+}
+
+
+/* ---------------------------------------------- */
+
+.head::selection {
+    color: black;
+    background-color: aquamarine;
+    text-shadow: 4px 4px antiquewhite;
+}
+
+.content::selection {
+    color: black;
+    background-color: aquamarine;
 }
