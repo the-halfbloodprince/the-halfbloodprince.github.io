@@ -1,7 +1,3 @@
-# The Half Blood Prince
-This is the code for my current portfolio site: the-halfbloodprince.github.io
-The name Half Blood Prince is borrowed from the Harry Potter character Prof. Severus Snape who used it as his nickname during his days as a student at Hogwarts.
-## Half Blood
-represents the fact that he was not a pure blood, only his mother was a witch but his father was a muggle.
-## Prince
-is sort of a tribute to his mother, Eileen Prince.
+# Cosmic-Quarks
+
+### We are a Astrophysics team under SSERD IPD working on finding a relation that accounts for the mass transfer from a companion star to a black hole, which would help us conclude the mass conservation and find if there is any discrepancy, which we call as the ghost mass and use reference systems for validation of ghost mass problem and accounting for the discrepancy using models/computation.
