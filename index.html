@@ -1,684 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/pace.min.js"></script>
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oxygen&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!--stylesheets-->
-    <base href="/">
-    <!-- <link rel="stylesheet" href="widescreen.css"> -->
-    <script src="https://kit.fontawesome.com/dbe8c3ff0f.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="assets/fontawesome-free-5.15.1-web/css/all.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href="assets/styles/widescreen.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="assets/styles/smallscreen.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    
-    <title>Cosmic Quarks</title>
-    <link rel = "icon" href="assets/logo_darkbg.png" type = "image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        //Navbar Animation
-        $(window).on('scroll',function(){
-            if ($(window).scrollTop())
-                $('.navs').addClass('scrolled');
-            else
-                $('.navs').removeClass('scrolled');
-        });
-
-        if ( $(window).width() < 600) {
-                    $('.members').removeAttr('data-scroll');
-                 }
-             else {}
-
-
-        function openNav() {
-  document.getElementById("mySidenav").style.width = "90vw";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
-        
-    </script>
-
-<noscript>
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Play&display=swap" rel="stylesheet">
     <style>
-      .simplebar-content-wrapper {
-        overflow: auto;
-      }
+        @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=DM+Mono:wght@300&family=Indie+Flower&family=Lobster&family=Permanent+Marker&family=Satisfy&display=swap');
     </style>
-  </noscript>
+
+    <script src="https://kit.fontawesome.com/dbe8c3ff0f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#Home" onclick="closeNav()">Home</a>
-        <a href="#abUs" onclick="closeNav()">About Us</a>
-        <a href="#Work" onclick="closeNav()">Work</a>
-        <a href="#DownRep" onclick="closeNav()">Download Report</a>
-        <a href="#Team" onclick="closeNav()">Team</a>
-        <a href="#Contact" onclick="closeNav()">Reach Out</a>
-      </div>
-    <nav id="navbar">
-        <div id="NavClose">
-            <div> Close</div>
-        </div>
-        <div id="NavL">
-        <ul>
-            <li class="navs" id="Homelink"><a href="#Home">Hi!</a></li>
-            <li class="navs" id="abUslink"><a href="#abUs">About Us</a></li>
-            <li class="navs" id="Theorylink"><a href="#Theory">Introduction</a></li>
-            <li class="navs" id="Worklink"><a href="#Work">Work</a></li>
-            <li class="navs" id="Teamlink"><a href="#Team">The Team</a></li>
-            <li class="navs" id="Contactlink"><a href="#Contact">Contact</a></li>
-        </ul>
-    </div>
-     </nav>
+    <!--   <div class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div> -->
+    <!--  <div id="loader"></div> -->
+    <div id="topbar">
+        <span id="name">
+            Manish<!--  Kumar Das -->
+        </span>
 
-     <span class="openmenu" onclick="openNav()"><img src="assets/navopen.svg"></span>
-    <div id="particles-js">
-        
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Acads">Academics</a></li>
+                <li><a href="#Ach">Achievements</a></li>
+                <li><a href="#Cont">Contact Me</a></li>
+            </ul>
+        </nav>
     </div>
-   <!--Front Page-->
-    <section class="sec" id="Home">
-        <div class="particletext" id="main-cosmic"></div>
-        <div class="particletext" id="main-quarks"></div>
-        <div id="logodiv"><img id="logo" src="assets/logo_darkbg.png" width="500" height="600"></div>
-        <div id="logo2div"><img id="logo2" src="assets/sserd.png"></div>
-        <div id="shorttext">A universe of atoms<br >an atom in the Universe.<br >~Prof. Richard Feynman</div>
-    </section>
-    <!--Pages-->
-    <section class="sec" id="abUs">
-        <h1 data-scroll>Who are <span>we</span>?</h1>
-        <p data-scroll>
-            We are a Astrophysics team under SSERD IPD working on finding a relation that accounts for the mass transfer from a companion star to a black hole, which would help us conclude the mass conservation and find if there is any discrepancy, which we call as the ghost mass and use reference systems for validation of ghost mass problem and accounting for the discrepancy using models/computation.
-            </p>
-    </section>
-    <section class="sec" id="Theory">
-        <h1><span  data-scroll>A Brief <span>Introduction</span></h1>
-        <p data-scroll>Having been inspired from the Cygnus-X1 system, the goal was to set up a similar binary system model and analyse some fundamental properties. We introduce a hypothetical binary system that consists of a stellar mass black hole, and an intermediate mass main sequence star. The base model builds up on the fact that mass from the star transfers to the black-hole via accretion. This leads to the inclusion of different types of mass transfers that take place in this whole process: Mass transfers due to stellar winds, Roche lobe overflows, advective outflows from the accretion disk, and astrophysical jets.<br >
-        Upon closer look, these mass transfers are actually the cause of mass losses that occurs during the transfer from a star to a black-hole. So, not all the mass is conserved. This mass discrepancy we term as Ghost Mass. The mass gained by the black-hole is not equivalent to the mass lost by the star.<br >
-        Our work in summary started off with intense literature review of what systems we could take into consideration, and what mass transfers we could account for. Having singled those out, we then proceeded with our analysis in the following manner:
-        <ul id="theorylist">
-            <li data-scroll><span>1</span>   With the governing equations for mass transfer, we set up a model and obtained plots that showed how different parameters varied with respect to another.</li>
-            <li data-scroll><span>2</span>    We obtained a rough simulation outlining the evolutionary process.</li>
-            <li data-scroll><span>3</span>    With the model in place, we took 3 systems and analytically calculated their respective ghost masses.</li>
-            <li data-scroll><span>4</span>    We then did a fit analysis that compared these ghost masses to that of what our model showed. The deviation of these points from the plane graph shows how unfeasible the system is with respect to our model.</li>
-        </ul>
-    </p>
-    </section>
-    <section class="sec" id="Work">
-        <h1 data-scroll>What have we <span>done</span>?</h1>
-        <p data-scroll class="pc">
-            We obtained the following results for the 3 systems:
-            <h2 data-scroll class="Syss">System 1: Cygnus X-1</h2>
-            <img data-scroll class="imgswork" src="assets/FINAL/c1.jpg">
-            <img data-scroll class="imgswork" src="assets/FINAL/c2.jpg">
-            <img data-scroll class="imgswork" src="assets/FINAL/c3.jpg">
-            <img data-scroll class="imgswork" src="assets/FINAL/c4.jpg">
-            <img data-scroll class="imgswork" src="assets/FINAL/c5.jpg">
-            <img data-scroll class="imgswork" src="assets/FINAL/c6.jpg">
-            <img data-scroll class="imgswork" src="assets/FINAL/c7.jpg">
-            <img data-scroll class="imgswork" src="assets/FINAL/c8.jpg">
-            <h2 data-scroll class="Syss">System 2: GRO J1655-40</h2>
-            <img data-scroll class="imgswork" src="assets/FINAL/c11.jpg">
-            <img data-scroll class="imgswork" src="assets/FINAL/c12.jpg">
-            <h2 data-scroll class="Syss">System 3: LMC X-3</h2>
-            <img data-scroll class="imgswork" src="assets/FINAL/c21.jpg">
-            <img data-scroll class="imgswork" src="assets/FINAL/c22.jpg">
-            <img data-scroll class="imgswork" src="assets/FINAL/c23.jpg">
-        </p>
-        <div data-scroll id="Simulation">
-            <p>And a <span>simulation</span> of a binary system in Unity made by our Adrian boii</p>
-            <video data-scroll controls poster="assets/simposter.jpg">
-                <source src="assets/sim.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div data-scroll id="Report">
-            <a href="">Download our Report</a>
-        </div>
-    </section>
-    <section data-scroll id="fun">
-        <h1 >A gallery of the fun we had <span>together</span>! <i class="fas fa-heart"></i></h1>
-            <div class="slidershow middle">
-                <div class="slides">
-                  <input type="radio" name="r" id="r1" checked>
-                  <input type="radio" name="r" id="r2">
-                  <input type="radio" name="r" id="r3">
-                  <input type="radio" name="r" id="r4">
-                  <input type="radio" name="r" id="r5">
-                  <input type="radio" name="r" id="r6">
-                  <input type="radio" name="r" id="r7">
-                  <input type="radio" name="r" id="r8">
-                  <input type="radio" name="r" id="r9">
-                  <input type="radio" name="r" id="r10">
-                  <input type="radio" name="r" id="r11">
-                  <input type="radio" name="r" id="r12">
-                  <input type="radio" name="r" id="r13">
-                  <input type="radio" name="r" id="r14">
-                  <input type="radio" name="r" id="r15">
-                  <input type="radio" name="r" id="r16">
-                  <input type="radio" name="r" id="r17">
-                  <input type="radio" name="r" id="r18">
-                  <input type="radio" name="r" id="r19">
-                  <input type="radio" name="r" id="r20">
-                  <div class="slide s1">
-                    <img src="assets/Funzz/1.jpg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/2.jpg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/3.jpg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/4.jpg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/5.jpg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/6.jpg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/7.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/8.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/9.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/10.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/11.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/12.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/13.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/14.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/15.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/16.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/17.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/18.jpeg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/19.jpg" alt="">
-                  </div>
-                  <div class="slide">
-                    <img src="assets/Funzz/20.jpeg" alt="">
-                  </div>
-                </div>
-          
-                <div class="navigation">
-                  <label for="r1" class="bar"></label>
-                  <label for="r2" class="bar"></label>
-                  <label for="r3" class="bar"></label>
-                  <label for="r4" class="bar"></label>
-                  <label for="r5" class="bar"></label>
-                  <label for="r6" class="bar"></label>
-                  <label for="r7" class="bar"></label>
-                  <label for="r8" class="bar"></label>
-                  <label for="r9" class="bar"></label>
-                  <label for="r10" class="bar"></label>
-                  <label for="r11" class="bar"></label>
-                  <label for="r12" class="bar"></label>
-                  <label for="r13" class="bar"></label>
-                  <label for="r14" class="bar"></label>
-                  <label for="r15" class="bar"></label>
-                  <label for="r16" class="bar"></label>
-                  <label for="r17" class="bar"></label>
-                  <label for="r18" class="bar"></label>
-                  <label for="r19" class="bar"></label>
-                  <label for="r20" class="bar"></label>
-                </div>
-              </div>
-    </section>
-    <section id="kwter">
-        <h1 data-scroll>Also, our iconic kween's <span>terrifying</span> performances</h1>
-        <div data-scroll class="BlackHoleStyle">
-            <video controls poster="assets/Funzz/poster_int.jpg">
-                <source src="assets/Funzz/Interstellar.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div data-scroll class="Interstellar">
-            <video controls poster="assets/Funzz/poster_black_hole_style.jpg">
-                <source src="assets/Funzz/Black hole style.mp4" type="video/mp4">
-            </video>
-        </div>
-    </section>
-    <section class="sec" id="Team">
-        <h1 data-scroll>The <span>Team</span></h1>
+
+    <section class="sec" id="home">
+        <h1 class="h1">Hi! I am<br>Manish Kumar Das</h1>
         <section>
-        
-        <div data-scroll class="members" id="Padmashree">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/padmashree.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Padmashree</div>
-                    <div class="nickname">Padmashree</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Bhakti">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/Bhakti.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Bhakti Mithagri</div>
-                    <div class="nickname">Einstein</div>
-                    <div>(Asst. Team Leader)</div>
-                    <div>
-                        <a href="mailto:bhakti.mithagri.bm@gmail.com"><i class="far fa-envelope"></i></a>
-                        <a href="http://linkedin.com/in/bhakti-mithagri-603b58194"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Raj">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/raj.JPG" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Raj Panchal</div>
-                    <div class="nickname">Sir Ji</div>
-                    <div>(Team Leader)</div>
-                    <div>
-                        <a href="mailto:raj.mpstme7@gmail.com"><i class="far fa-envelope"></i></a>
-                        <a href="http://linkedin.com/in/raj-panchal-9105b81a3"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Akshita">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/akshita.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Akshita Swaminathan</div>
-                    <div class="nickname">Ms. Perfectionist</div>
-                    <div>(Comms. Leader)</div>
-                    <div>
-                        <a href="mailto:akshitasgs@gmail.com"><i class="far fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/akshita-swaminathan-73107b141"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Apoorv">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/apoorv.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Apoorv Tripathi</div>
-                    <div class="nickname">Apoorv</div>
-                    <div>
-                        <a href="mailto:someone@example.com?Subject=Hello%20again"><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Kween">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/shradha.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Shradha Ramakrishnan</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                            <a href="mailto:shradha7250@gmail.com"><i class="far fa-envelope"></i></a>
-                            <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Param">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/param.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Parmeshwar Dewangan</div>
-                    <div class="nickname">Param</div>
-                    <div>
-                        <a href="mailto:parmeshwardewangon@gmail.com"><i class="far fa-envelope"></i></a>
-                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Snape">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/manish.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Manish Kumar Das</div>
-                    <div class="nickname">Prof. Snape</div>
-                    <div>(The Lord of this Site)</div>
-                    <div>
-                        <a href="mailto:ammanishkumardas@gmail.com"><i class="far fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/manish-kumar-das-118752192"><i class="fab fa-linkedin-in"></i></a>
-<!--                         <a href="https://www.github.com/the-halfbloodprince"><i class="fab fa-github"></i></a>
- -->                        <a href="https://www.the-halfbloodprince.github.io"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Adrian">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/adhiraj.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Adhiraj Bhagawati</div>
-                    <div class="nickname">Adrian boi</div>
-                    <div>
-                        <a href="mailto:adhirajquantum1@gmail.com"><i class="far fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/adhiraj-bhagawati-b86426149"><i class="fab fa-linkedin-in"></i></a>
-<!--                         <a href="https://www.linkedin.com/in/adhiraj-bhagawati-b86426149"><i class="fab fa-github"></i></a>
- -->                        <a href="https://reanadhiraj.now.sh"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="mathBoi">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/saisish.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Sahasransu Mohanty</div>
-                    <div class="nickname">Math boi</div>
-                    <div>
-                        <a href="mailto:sahasransumohanty@gmail.com"><i class="far fa-envelope"></i></a>
-                        <a href="www.linkedin.com/in/saisish-sahasransu"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Rutanshi">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/rutanshi.jpeg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Rutanshi Pradhan</div>
-                    <div class="nickname">Ru..... The Sweet Doctor</div>
-                    <div>
-                        <a href="mailto:rutanshipradhan@gmail.com"><i class="far fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/rutanshi-pradhan-4352831b2"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Ashika">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/Ashika.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Ashika A</div>
-                    <div class="nickname">Ashi</div>
-                    <div>
-                        <a href="mailto:ashikaachuth@gmail.com"><i class="far fa-envelope"></i></a>
-                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Sree">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/sreeranjini.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Sreeranjini P U</div>
-                    <div class="nickname">Sree</div>
-                    <div>
-                        <a href="mailto:sreeranjinipu1999@gmail.com"><i class="far fa-envelope"></i></a>
-                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Alice">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/Alice.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Alice</div>
-                    <div class="nickname">Alice in Wonderland</div>
-                    <div>
-                        <a href="mailto:aliceinbaraj123@gmail.com"><i class="far fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/alice-45b0a219b"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="sruthi">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/sruthi.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Sruthi P V</div>
-                    <div class="nickname">Sruthi</div>
-                    <div>
-                        <a href="sruthipv2000@gmail.com"><i class="far fa-envelope"></i></a>
-                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Syamadas">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/syamadas.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">S Syamadas</div>
-                    <div class="nickname">Syama</div>
-                    <div>
-                        <a href="mailto:syamadas80@gmail.com"><i class="far fa-envelope"></i></a>
-                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Keerthi">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/keerthi.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Keerthi P S</div>
-                    <div class="nickname">Human Calculator</div>
-                    <div>
-                        <a href="mailto:keerthips09@gmail.com"><i class="far fa-envelope"></i></a>
-                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Sahasra">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/sahasra.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Sahasra S</div>
-                    <div class="nickname">Sahasra</div>
-                    <div>
-                        <a href="mailto:sahasrasunil20@gmail.com"><i class="far fa-envelope"></i></a>
-                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Aswathi">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/aswathi.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Aswathi P S</div>
-                    <div class="nickname">Ashlien</div>
-                    <div>
-                        <a href="mailto:aswathipampurayam@gmail.com"><i class="far fa-envelope"></i></a>
-                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Suneet">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/suneet.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Suneet Ranjan Khuntia</div>
-                    <div class="nickname">Suneet</div>
-                    <div>
-                        <a href="mailto:suneet10khuntia@gmail.com"><i class="far fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/suneet-ranjan-khuntia-5733a0169"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        
-       
-        
-
-       
+            I am a guy who mostly loves keeping things around me as simple as possible. Though I love to spend an entire week watching good series and movies, I feel more than relaxed to spend time exploring the world of mathematics, physics and computers. Below,
+            you can see the few best photos I could find of myself(which itself took me two days). Hope you find me interesting, even though not my photos. xD
+        </section>
     </section>
-    </section>
-    <section class="sec" id="Contact">
-        <h1 data-scroll><span>Reach</span> out</h1>
-        <div data-scroll><p>We are really enthusiastic and hopeful to talk with you and exchange ideas, recieve feedback and answer queries. Please feel free to drop a message using any of the mediums below. <span>It was nice meeting you.</span> Themks xD</p></div>
-        <div data-scroll>
-            <a href="mailto:shradha7250@gmail.com;suneet10khuntia@gmail.com;rutanshipradhan@gmail.com;sahasransumohanty@gmail.com;bhakti.mithagri.bm@gmail.com;sreeranjinipu1999@gmail.com;aswathipampurayam@gmail.com;sahasrasunil20@gmail.com;sahasrasunil20@gmail.com;keerthips09@gmail.com;syamadas80@gmail.com;ashikaachuth@gmail.com;sruthipv2000@gmail.com;parmeshwardewangon@gmail.com;akshitasgs@gmail.com;adhirajquantum1@gmail.com;raj.mpstme7@gmail.com;ammanishkumardas@gmail.com"><i class="far fa-envelope"></i></a>
-        </div>
-    </section>
-    <!--scripts-->
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-    <script src="assets/particles.js"></script> 
-    <script src="assets/app.js"></script>
-    <script src="assets/Blotter/build/blotter.js"></script>
-    <script src="assets/Blotter/build/materials/fliesMaterial.js"></script>
-    <script type="text/javascript" src="assets/ParticleText.js"></script> 
-    <script src="assets/scroll-out.min.js"></script>
-    <script type="text/javascript">
-        ScrollOut({
-                     threshold:0.1
-                });
-    </script> 
-    <script type="module">
-            import jump from "./node_modules/jump.js/dist/jump.module.js";
 
-            //referencing
-    var Home=document.getElementById("Homelink");
-    var abUs=document.getElementById("abUslink");
-    var Theory=document.getElementById("Theorylink");
-    var Work=document.getElementById("Worklink");
-    var Team=document.getElementById("Teamlink");
-    var Contact=document.getElementById("Contactlink");
+    <section class="sec" id="Photos">
+        <h1 class="h1">A few clicks with me on them</h1>
 
-    //jumps
-    Home.addEventListener('click',()=>{
-      jump('#Home');
-    })
-    abUs.addEventListener('click',()=>{
-      jump('#abUs');
-    })
-    Theory.addEventListener('click',()=>{
-      jump('#Theory');
-    })
-    Work.addEventListener('click',()=>{
-      jump('#Work');
-    })
-    Team.addEventListener('click',()=>{
-      jump('#Team');
-    })
-    Contact.addEventListener('click',()=>{
-      jump('#Contact');
-    })
-  
-    </script> 
-   
+    </section>
+    <section class="sec" id="Acads">
+        <h1 class="h1">My Academics</h1>
+
+    </section>
+    <section class="sec" id="Ach">
+        <h1 class="h1">My Achievements so far...</h1>
+
+    </section>
+    <section class="sec" id="Cont">
+        <h1 class="h1">Say Hi!</h1>
+
+    </section>
+
+
+    <!--  <script>
+        var load = document.getElementsByClassName('lds-ripple');
+        document.onload
+    </script> -->
+
+    <!--  <script>
+        var loader;
+
+        function loadnow(opacity) {
+            if (opacity <= 0) {
+                loader.style.display = 'none';
+            } else {
+                loader.style.opacity = opacity;
+                window.setTimeout(function() {
+                    loadnow(opacity - 0.1);
+                }, 100)
+            }
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loader = document.getElementById('loader');
+            loadnow(1);
+        })
+    </script> -->
 </body>
+
 </html>
