@@ -1,0 +1,104 @@
+{
+  "main": {
+    "name": "Manish Kumar Das",
+    "occupation": "Sophomore UG, Applied Geology",
+    "description": "I convert coffee to code",
+    "image": "profilepic.jpg",
+    "bio": "Hi there! I am Manish! I am an Applied Geology undergraduate student currently studying in the Indian Institute of Technology(IIT), Kharagpur. I am mostly interested in Physics, specially astronomy and cosmology. Other than Physics, I love spending my time programming and learning about computers and mathematics, playing badminton and playing guitar, though I have just started learning so its more of learning guitar than playing. ",
+    "contactmessage": "Get in touch with me...",
+    "email": "ammanishkumardas@gmail.com",
+    "address": {
+      "street": "JEC Road",
+      "city": "Jorhat",
+      "state": "Assam",
+      "zip": "785007"
+    },
+    "website": "https://www.papareact.com/course",
+    "resumedownload": "http://papareact.com",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/iammkdmanish/",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/manish-kumar-das-118752192/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/thisismithi.mkd/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/the-halfbloodprince",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "My Programming Language Proficiency",
+    "education": [
+      {
+        "school": "Indian Institute of Technology(IIT), Kharagpur",
+        "degree": "Integrated M.Sc, Applied Geology",
+        "graduated": "2024(expected)",
+        "description": "Trying my best to balance my courses and the extra stuff"
+      }
+    ],
+    "work": [
+      {
+        "company": "Technology Transfer Group",
+        "title": "Design Team Member",
+        "years": "May 2020 - Present",
+        "description": "Designed posters, brochures and also about to start video editing."
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "60%"
+      },
+      {
+        "name": "Python",
+        "level": "70%"
+      },
+      {
+        "name": "Git",
+        "level": "80%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "99%"
+      },
+      {
+        "name": "Web Development",
+        "level": "65%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Netflix Clone",
+        "category": "Clones",
+        "image": "ncss1.jpg",
+        "url": "https://netflix-clone-44669.web.app/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Manish is absolutely excellent to work with. The ideas and concepts he has are truly remarkable... It's always fun working with Manish. Would definitely reccomend him",
+        "user": "Imaginary Person 1"
+      },
+      {
+        "text": "Learning with Manish has been AWESOME, he makes learning anything so easy and approachable, you'll finally feel like you know what's going on!",
+        "user": "Imaginary Person 2"
+      }
+    ]
+  }
+}
