@@ -35,11 +35,16 @@
         "name": "github",
         "url": "https://github.com/the-halfbloodprince",
         "className": "fa fa-github"
+      },
+      {
+        "name": "unsplash",
+        "url": "https://unsplash.com/@_thehalfbloodprince_",
+        "className": "fab fa-unsplash"
       }
     ]
   },
   "resume": {
-    "skillmessage": "My Programming Language Proficiency",
+    "skillmessage": "My Programming Proficiency",
     "education": [
       {
         "school": "Indian Institute of Technology(IIT), Kharagpur",
@@ -58,6 +63,22 @@
     ],
     "skills": [
       {
+        "name": "HTML",
+        "level": "65%"
+      },
+      {
+        "name": "CSS",
+        "level": "90%"
+      },
+      {
+        "name": "SASS",
+        "level": "70%"
+      },
+      {
+        "name": "MERN",
+        "level": "60%"
+      },
+      {
         "name": "ReactJs",
         "level": "60%"
       },
@@ -66,16 +87,44 @@
         "level": "70%"
       },
       {
+        "name": "C",
+        "level": "70%"
+      },
+      {
+        "name": "C++",
+        "level": "70%"
+      },
+      {
+        "name": "Photoshop",
+        "level": "40%"
+      },
+      {
+        "name": "Illustrator",
+        "level": "60%"
+      },
+      {
+        "name": "Blender",
+        "level": "20%"
+      },
+      {
+        "name": "Premiere Pro",
+        "level": "70%"
+      },
+      {
+        "name": "After Effects",
+        "level": "30%"
+      },
+      {
+        "name": "Figma",
+        "level": "90%"
+      },
+      {
         "name": "Git",
         "level": "80%"
       },
       {
         "name": "JavaScript",
         "level": "99%"
-      },
-      {
-        "name": "Web Development",
-        "level": "65%"
       }
     ]
   },
