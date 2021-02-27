@@ -22,8 +22,14 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
+.quote{
+  font-size: 4rem;
+  line-height: 4.3rem;
+}
+
 body {
   background: #0f0f0f;
+  overflow: hidden;
 }
 
 /* ------------------------------------------------------------------ */
@@ -33,6 +39,10 @@ body {
 *::selection {
   background-color: rgba(106, 38, 205, 0.9);
   color: rgb(255, 255, 255);
+}
+
+#root{
+  visibility: visible;
 }
 
 #particles {
@@ -1188,34 +1198,52 @@ footer .social-links li:first-child {
 }
 
 #logo path:nth-child(1) {
+  fill:transparent;
   stroke-dasharray: 1482.63818359375px;
   stroke-dashoffset: 1482.63818359375px;
-  animation: line-anim 1.5s 0.3s ease forwards, str-ani 0.7s 3.2s ease forwards;
+}
+path.begin:nth-child(1) {
+  animation: line-anim 1.5s 0.3s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
 }
 #logo path:nth-child(2) {
+  fill:transparent;
   stroke-dasharray: 994.51806640625px;
   stroke-dashoffset: 994.51806640625px;
-  animation: line-anim 1.5s 0.6s ease forwards, str-ani 0.7s 3.2s ease forwards;
+}
+path.begin:nth-child(2) {
+  animation: line-anim 1.5s 0.6s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
 }
 #logo path:nth-child(3) {
+  fill:transparent;
   stroke-dasharray: 1226.5263671875px;
   stroke-dashoffset: 1226.5263671875px;
-  animation: line-anim 1.5s 0.9s ease forwards, str-ani 0.7s 3.2s ease forwards;
+}
+path.begin:nth-child(3) {
+  animation: line-anim 1.5s 0.9s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
 }
 #logo path:nth-child(4) {
+  fill:transparent;
   stroke-dasharray: 510.592041015625px;
   stroke-dashoffset: 510.592041015625px;
-  animation: line-anim 1.5s 1.2s ease forwards, str-ani 0.7s 3.2s ease forwards;
+}
+path.begin:nth-child(4) {
+  animation: line-anim 1.5s 1.2s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
 }
 #logo path:nth-child(5) {
+  fill:transparent;
   stroke-dasharray: 1027.396484375px;
   stroke-dashoffset: 1027.396484375px;
-  animation: line-anim 1.5s 1.5s ease forwards, str-ani 0.7s 3.2s ease forwards;
+}
+path.begin:nth-child(5) {
+  animation: line-anim 1.5s 1.5s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
 }
 #logo path:nth-child(6) {
+  fill:transparent;
   stroke-dasharray: 1117.6881103515625px;
   stroke-dashoffset: 1117.6881103515625px;
-  animation: line-anim 1.5s 1.8s ease forwards, str-ani 0.7s 3.2s ease forwards;
+}
+path.begin:nth-child(6) {
+  animation: line-anim 1.5s 1.8s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
 }
 
 #Hi {
@@ -1261,3 +1289,4 @@ footer .social-links li:first-child {
     stroke-width: 3;
   }
 }
+
