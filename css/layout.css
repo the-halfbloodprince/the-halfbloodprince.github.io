@@ -1290,3 +1290,18 @@ path.begin:nth-child(6) {
   }
 }
 
+.portfolio-image{
+  width: 50vw;
+  height: 10vw;
+  object-fit: cover;
+}
+
+#portfolio-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-text{
+  color: #303030;
+}

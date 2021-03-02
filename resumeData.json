@@ -8,13 +8,13 @@
     "contactmessage": "Get in touch with me...",
     "email": "ammanishkumardas@gmail.com",
     "address": {
-      "street": "JEC Road",
+      "street": "JEC Road, New Garamur",
       "city": "Jorhat",
       "state": "Assam",
       "zip": "785007"
     },
     "website": "",
-    "resumedownload": "",
+    "resumedownload": "https://drive.google.com/file/d/1gtTAChjgJYZ_fxHu8nWTOvuY1lqM0RSh/view?usp=sharing",
     "social": [
       {
         "name": "facebook",
@@ -44,13 +44,25 @@
     ]
   },
   "resume": {
-    "skillmessage": "My Programming Proficiency",
+    "skillmessage": "Cool Stuff I'm good at :",
     "education": [
       {
         "school": "Indian Institute of Technology(IIT), Kharagpur",
         "degree": "Integrated M.Sc, Applied Geology",
         "graduated": "2024(expected)",
         "description": "Trying my best to balance my courses and the extra stuff"
+      },
+      {
+        "school": "Kendriya Vidyalaya, North East Institute of Science and Technology (NEIST/RRL)",
+        "degree": "Higher Secondary Education in Science",
+        "graduated": "2018",
+        "description": "Had an interesting intermediate education and passed with 87.4%."
+      },
+      {
+        "school": "Springdale High School",
+        "degree": "High School",
+        "graduated": "2016",
+        "description": "Had a fun time growing up here and passed out with 10 CGPA."
       }
     ],
     "work": [
@@ -59,6 +71,18 @@
         "title": "Design Team Member",
         "years": "May 2020 - Present",
         "description": "Designed posters, brochures and also about to start video editing."
+      },
+      {
+        "company": "Team Cosmic Quarks, SSERD",
+        "title": "Research Intern",
+        "years": "Oct 2020 - Dec 2020",
+        "description": "Studied and tried to analyse the mass evolution in black hole companion star binary systems."
+      },
+      {
+        "company": "Prithvi 2021",
+        "title": "Web Team Member",
+        "years": "Feb 2021 - Present",
+        "description": "Web Team Member at Prithvi 2021, the departmental fest under the Department of Geology and Geophysics, IIT Kharagpur."
       }
     ],
     "skills": [
@@ -75,11 +99,15 @@
         "level": "70%"
       },
       {
-        "name": "MERN",
+        "name": "JavaScript",
+        "level": "99%"
+      },
+      {
+        "name": "React",
         "level": "60%"
       },
       {
-        "name": "ReactJs",
+        "name": "MERN",
         "level": "60%"
       },
       {
@@ -103,28 +131,12 @@
         "level": "60%"
       },
       {
-        "name": "Blender",
-        "level": "20%"
-      },
-      {
-        "name": "Premiere Pro",
-        "level": "70%"
-      },
-      {
-        "name": "After Effects",
-        "level": "30%"
-      },
-      {
         "name": "Figma",
         "level": "90%"
       },
       {
         "name": "Git",
         "level": "80%"
-      },
-      {
-        "name": "JavaScript",
-        "level": "99%"
       }
     ]
   },
@@ -135,6 +147,12 @@
         "category": "Clones",
         "image": "ncss1.jpg",
         "url": "https://netflix-clone-44669.web.app/"
+      },
+      {
+        "title": "Team Cosmic Quarks",
+        "category": "Portfolios",
+        "image": "CQ.jpg",
+        "url": "https://teamcosmicquarks.sserd.org/"
       }
     ]
   },
